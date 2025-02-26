@@ -29,12 +29,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      {{-- <li class="nav-item d-none d-sm-inline-block">
         <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
-      </li>
+      </li> --}}
     </ul>
 
     <!-- Right navbar links -->
@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
       </li>
 
-      <!-- Messages Dropdown Menu -->
+      {{-- <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
@@ -97,9 +97,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
+            <!-- Message End --> --}}
+          {{-- </a> --}}
+          {{-- <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
@@ -113,12 +113,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
-            <!-- Message End -->
-          </a>
+            <!-- Message End --> --}}
+          {{-- </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
-      </li>
+      </li> --}}
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
@@ -163,7 +163,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
       {{-- <img src="dist/img/AdminLTELogo.png" alt="{{config('app.name')}}Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
       <span class="brand-text font-weight-light">{{config('app.name')}}</span>
     </a>
@@ -176,20 +176,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
           {{-- <img src="{{ asset('asset/dist/img/user2-160x160.jpg') }}"class="img-circle elevation-2" alt="User Image"> --}}
         </div>
         <div class="info">
-          <a href="#" class="d-block">{{Auth::user()->name}}</a>
+          <a href="{{ route('profile.edit') }}" class="d-block">{{Auth::user()->name}}</a>
         </div>
       </div>
 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
+        {{-- <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-sidebar">
               <i class="fas fa-search fa-fw"></i>
             </button>
           </div>
-        </div>
+        </div> --}}
       </div>
 
       <x-nav-menu />

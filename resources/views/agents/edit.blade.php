@@ -6,7 +6,7 @@
     </x-slot>
 
     <x-slot name="breadcrumb">
-        <li class="breadcrumb-item">Leads</li>
+        <li class="breadcrumb-item">Agents</li>
     </x-slot>
 
 <div class="container">

@@ -24,7 +24,7 @@
     </div>
     <a href="{{ route('leads.edit', $lead) }}" class="btn btn-warning mt-3">Edit</a>
     <a href="{{ route('leads.index') }}" class="btn btn-secondary mt-3">Back to Leads</a>
-    <a href="{{ route('leads.changeStage', $lead) }}" class="btn btn-primary mt-3">Change Stage</a>
+    {{-- <a href="{{ route('leads.changeStage', $lead) }}" class="btn btn-primary mt-3">Change Stage</a> --}}
 
 </div>
 </x-dashboard-layout>

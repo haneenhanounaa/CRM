@@ -19,7 +19,7 @@
         <a href="#" class="nav-link ">
           <i class="fas fa-file-alt"></i>
           <p>
-            Reports
+              Reports
           <i class="right fas fa-angle-left"></i>
           </p>
         </a>
@@ -50,5 +50,16 @@
             </li>
           </ul>
     </li>
+    <li class="nav-item">
+      <form method="POST" action="{{ route('logout') }}">
+          @csrf
+          <a href="{{ route('logout') }}" class="nav-link"
+              onclick="event.preventDefault();
+               this.closest('form').submit(); ">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>{{ __('Log Out') }}</p>
+          </a>
+      </form>
+  </li>
     </ul>
   </nav>
